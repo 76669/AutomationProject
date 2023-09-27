@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ContactObjects {
+public class Contact {
 
 	@FindBy (xpath="//h2[text()='Get In Touch']")
 	public WebElement get_in_tuch;
