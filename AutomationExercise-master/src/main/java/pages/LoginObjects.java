@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginObjects {
+public class login {
 
 	@FindBy (xpath="//a[text()=' Home']")
 	public WebElement homepage;
