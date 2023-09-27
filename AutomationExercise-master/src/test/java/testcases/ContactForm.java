@@ -18,7 +18,7 @@ import pages.ContactFormObjects;
 import pages.SignUpObjects;
 import resuableFunctions.ResuableClass;
 
-public class ContactForm extends ResuableClass{
+public class Contact extends ResuableClass{
 
 	ContactFormObjects co= new ContactFormObjects(ResuableClass.driver);
 	SignUpObjects so= new SignUpObjects(ResuableClass.driver);
@@ -33,21 +33,21 @@ public class ContactForm extends ResuableClass{
 		 elementAvailable(so.homepage, true);
 		 co.ContactUs.click();
 		 elementAvailable(co.GetInTch, true);
-		 co.ContName.sendKeys("Rakshanda");
-		 co.ContEmail.sendKeys("rakshanda1710@gmail.com");
+		 co.ContName.sendKeys("abc");
+		 co.ContEmail.sendKeys("AB134@gmail.com");
 		 co.ContSubj.sendKeys("Test Subject");
 		 co.ContMsg.sendKeys("Test Message");
-		// co.uploadFile.sendKeys("C:\\Users\\raksh\\OneDrive\\Desktop\\SeleniumExcel.xlsx");
+		
 		 Robot rb= new Robot();
 		 StringSelection str = new StringSelection("C:\\Users\\raksh\\OneDrive\\Desktop\\SeleniumExcel.xlsx");
 		 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-		 // press Contol+V for pasting
+		 
 	     rb.keyPress(KeyEvent.VK_CONTROL);
 	     rb.keyPress(KeyEvent.VK_V);
-	     // release Contol+V for pasting
+	     
 	     rb.keyRelease(KeyEvent.VK_CONTROL);
 	     rb.keyRelease(KeyEvent.VK_V);	  
-	     // for pressing and releasing Enter
+	     
 	     rb.keyPress(KeyEvent.VK_ENTER);
 	     rb.keyRelease(KeyEvent.VK_ENTER);
 		 co.submitBtn.click();
