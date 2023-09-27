@@ -10,8 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ProductObjects {	
 	
-	@FindBy(xpath  = "//a[text()=' Products']"
-	       )public WebElement products;
+	@FindBy(xpath  = "//a[text()=' Products']")
+	)public WebElement products;
 	@FindBy(xpath  = "//h2[text()='All Products']")
 	public WebElement all_prodTxt;
 	@FindBy(xpath = "//div[@class='features_items']")
