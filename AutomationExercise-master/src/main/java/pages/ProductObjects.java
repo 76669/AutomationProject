@@ -10,59 +10,94 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ProductObjects {	
 	
-	@FindBy(xpath  = "//a[text()=' Products']")public WebElement products;
-	@FindBy(xpath  = "//h2[text()='All Products']")public WebElement allProdTxt;
-	@FindBy(xpath = "//div[@class='features_items']")public WebElement productlist;
-	@FindBy(xpath = "(//a[text()='View Product'])[1]")public WebElement ViewFirstProduct;
-	@FindBy (xpath = "//h2[text()='Blue Top']")public WebElement productName;
-	@FindBy (xpath = "//p[text()='Category: Women > Tops']")public WebElement prodCategory;
-	@FindBy (xpath = "//span[text()='Rs. 500']")public WebElement prodPrice;
-	@FindBy (xpath = "//p[text()=' In Stock']")public WebElement ProdAvail;
-	@FindBy (xpath = "//p[text()=' New']")public WebElement prodCondition;
-	@FindBy (xpath = "//p[text()=' Polo']")public WebElement ProdBrand;
-	@FindBy (xpath = "//a[@href='/product_details/1']")public WebElement prodDetailsBtn;
-	@FindBy (id = "quantity")public WebElement quantitys;
-	@FindBy (xpath = "//button[@class='btn btn-default cart']") public WebElement addToCardBtn;
+	@FindBy(xpath  = "//a[text()=' Products']"
+	       )public WebElement products;
+	@FindBy(xpath  = "//h2[text()='All Products']")
+	public WebElement all_prodTxt;
+	@FindBy(xpath = "//div[@class='features_items']")
+	public WebElement produc_tlist;
+	@FindBy(xpath = "(//a[text()='View Product'])[1]")
+	public WebElement view_product;
+	@FindBy (xpath = "//h2[text()='Blue Top']")
+	public WebElement product_name;
+	@FindBy (xpath = "//p[text()='Category: Women > Tops']")
+	public WebElement catogory_of_product;
+	@FindBy (xpath = "//span[text()='Rs. 500']")
+	public WebElement price;
+	@FindBy (xpath = "//p[text()=' In Stock']")
+	public WebElement avilable;
+	@FindBy (xpath = "//p[text()=' New']")
+	public WebElement condition_of_product;
+	@FindBy (xpath = "//p[text()=' Polo']")
+	public WebElement brand;
+	@FindBy (xpath = "//a[@href='/product_details/1']")
+	public WebElement detail_of_product;
+	@FindBy (id = "quantity")
+	public WebElement quantitys;
+	@FindBy (xpath = "//button[@class='btn btn-default cart']") 
+	public WebElement add_to_cart;
 	
-	// Quantity = 4
-		@FindBy (xpath = "//button[@class='disabled' and text()='1']")public WebElement quantity4;
+	// Quantity 
+		@FindBy (xpath = "//button[@class='disabled' and text()='1']")
+	public WebElement product_quantity;
 	
-	//Search Products objects
-	@FindBy (id = "search_product")public WebElement searchProd;
-	@FindBy (id = "submit_search")public WebElement searchBtn;
-	@FindBy (xpath = "//h2[text()='Searched Products']") public WebElement searchedProd;
+	//Search Products
+	@FindBy (id = "search_product")
+	public WebElement searchProd;
+	@FindBy (id = "submit_search")
+	public WebElement submit;
+	@FindBy (xpath = "//h2[text()='Searched Products']")
+	public WebElement seaarch_product;
 	
 	//Add to cart
 	@FindBy(xpath = "//a[@data-product-id='1']/preceding-sibling::img")
-	public WebElement firstProdHover;
+	public WebElement first_product;
 	@FindBy(xpath = "//div[@class='overlay-content']//a[@data-product-id='1']")
-	public WebElement firstProdAddToCart;
+	public WebElement first_product_add_to_cart;
 	@FindBy(xpath = "//a[@data-product-id='2']/preceding-sibling::img")
-	public WebElement secondProdHover;
+	public WebElement second_product;
 	@FindBy(xpath = "//div[@class='overlay-content']//a[@data-product-id='2']")
-	public WebElement secondProdAddToCart;
-	@FindBy (xpath = "(//a[@data-product-id='1'])[1]") public WebElement addfirstProdToCart;
-	@FindBy (xpath = "(//a[@data-product-id='2'])[1]") public WebElement addSecProdToCart;
-	@FindBy (xpath = "(//button[text()='Continue Shopping'])[1]") public WebElement continueShopp;
-	@FindBy (xpath = "(//u[text()='View Cart'])") public WebElement viewCart;
+	public WebElement second_prod_add_to_cart;
+	@FindBy (xpath = "(//a[@data-product-id='1'])[1]")
+	public WebElement first_prodcut_addto_cart;
+	@FindBy (xpath = "(//a[@data-product-id='2'])[1]")
+	public WebElement second_prodcut_addto_cart;
+	@FindBy (xpath = "(//button[text()='Continue Shopping'])[1]")
+	public WebElement continue_shopping;
+	@FindBy (xpath = "(//u[text()='View Cart'])") 
+	public WebElement view_cart;
 	
-	//First Product details in cart
-	@FindBy (xpath = "//button[@class='disabled' and text()='1']")public List<WebElement> quantity;
-	@FindBy (xpath = "//p[text()='Rs. 500']")public WebElement price;
-	@FindBy (xpath = "//img[@src='get_product_picture/1']")public WebElement prodImage;
-	@FindBy (xpath = "//p[text()='Women > Tops']")public WebElement productCategory;
-	@FindBy (xpath = "//a[text()='Blue Top']")public WebElement prodName;
-	@FindBy (xpath = "//p[@class='cart_total_price' and text()='Rs. 500']")public WebElement totalPrice;
-	@FindBy (xpath = "//a[@class='cart_quantity_delete' and @data-product-id='1']/i")public WebElement deleteItems;
-	@FindBy (xpath = "//p[@class='text-center']")public WebElement emptyCart;
+	// Product details in cart 1st
+	@FindBy (xpath = "//button[@class='disabled' and text()='1']")
+	public List<WebElement> quantity;
+	@FindBy (xpath = "//p[text()='Rs. 500']")
+	public WebElement price;
+	@FindBy (xpath = "//img[@src='get_product_picture/1']")
+	public WebElement product_image;
+	@FindBy (xpath = "//p[text()='Women > Tops']")
+	public WebElement product_catogrory;
+	@FindBy (xpath = "//a[text()='Blue Top']")
+	public WebElement product_name;
+	@FindBy (xpath = "//p[@class='cart_total_price' and text()='Rs. 500']")
+	public WebElement total_price;
+	@FindBy (xpath = "//a[@class='cart_quantity_delete' and @data-product-id='1']/i")
+	public WebElement item_delet;
+	@FindBy (xpath = "//p[@class='text-center']")
+	public WebElement empty_cart;
 	
-	//Second Product details in cart
-	@FindBy (xpath = "//p[text()='Rs. 400']")public WebElement secPrice;
-	@FindBy (xpath = "//img[@src='get_product_picture/2']")public WebElement SecProdImage;
-	@FindBy (xpath = "//p[text()='Men > Tshirts']")public WebElement secProdCategory;
-	@FindBy (xpath = "//a[text()='Men Tshirt']")public WebElement secProdName;
-	@FindBy (xpath = "//p[@class='cart_total_price' and text()='Rs. 400']")public WebElement secTotalPrice;
-	@FindBy (xpath = "//a[@class='cart_quantity_delete' and @data-product-id='2']/i")public WebElement secDeleteItems;
+	// Product details in cart 2nd
+	@FindBy (xpath = "//p[text()='Rs. 400']")
+	public WebElement price;
+	@FindBy (xpath = "//img[@src='get_product_picture/2']")
+	public WebElement prodcut_image_2nd;
+	@FindBy (xpath = "//p[text()='Men > Tshirts']")
+	public WebElement product_catogrory_2nd;
+	@FindBy (xpath = "//a[text()='Men Tshirt']")
+	public WebElement product_name_2nd;
+	@FindBy (xpath = "//p[@class='cart_total_price' and text()='Rs. 400']")
+	public WebElement total_price_2nd;
+	@FindBy (xpath = "//a[@class='cart_quantity_delete' and @data-product-id='2']/i")
+	public WebElement item_delet_2nd;
 	
 	WebDriver driver;
 	public ProductObjects(WebDriver driver) {
