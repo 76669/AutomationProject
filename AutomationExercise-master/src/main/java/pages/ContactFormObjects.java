@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 public class ContactObjects {
 
 	@FindBy (xpath="//h2[text()='Get In Touch']")
-	public WebElement getintuch;
+	public WebElement get_in_tuch;
 	@FindBy (xpath = "//a[text()=' Contact us']")
-	public WebElement contactus;
+	public WebElement contact_us;
 	@FindBy (xpath = "//input[@data-qa='name']")
 	public WebElement name;
 	@FindBy (xpath = "//input[@data-qa='email']")
@@ -20,11 +20,11 @@ public class ContactObjects {
 	@FindBy (xpath = "//textarea[@id='message']")
 	public WebElement message;
 	@FindBy (xpath = "//input[@name='upload_file']")
-	public WebElement fileupload;
+	public WebElement fileu-pload;
 	@FindBy (xpath = "//input[@name='submit']") 
 	public WebElement submit;
 	@FindBy (xpath = "(//div[contains(text(),'Success! Your details ')])[1]") 
-	public WebElement successmessage;
+	public WebElement successm-essage;
 	@FindBy (xpath = "//a//span[text()=' Home']") 
 	public WebElement home;
 	
