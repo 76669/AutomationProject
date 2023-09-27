@@ -39,7 +39,7 @@ public class Contact extends ResuableClass{
 		 co.ContMsg.sendKeys("Test Message");
 		
 		 Robot rb= new Robot();
-		 StringSelection str = new StringSelection("C:\\Users\\raksh\\OneDrive\\Desktop\\SeleniumExcel.xlsx");
+		 StringSelection str = new StringSelection(" "C:/Users/ryk96/eclipse-workspace/All_in_one/Driver/chromedriver.exe"");
 		 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 		 
 	     rb.keyPress(KeyEvent.VK_CONTROL);
